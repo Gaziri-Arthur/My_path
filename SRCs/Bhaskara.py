@@ -4,6 +4,7 @@ a = float(input('Valor de a:'))
 b = float(input('Valor de b:'))
 c = float(input('Valor de c:'))
 D = b**2 - 4*a*c
+
 if (D) < 0:
     print('não há raizes reais')
 else:

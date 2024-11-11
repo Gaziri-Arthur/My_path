@@ -14,7 +14,7 @@ int coef[C][A];
 int main ()
 {
     char alunos24[A][L], alunos23[A][L];
-    int i, k, j = 0, aux, nasc23[A][B], nasc24[A][B], res, melhor23, melhor24;
+    int i, j = 0, aux, nasc23[A][B], nasc24[A][B], res, melhor23, melhor24;
     float med1 = 0, med2 = 0, med3 = 0, coef23[A], coef24[A], maior23 = 0, maior24 = 0;
     
     printf("DIGITE O NOME DOS ALUNOS DE INFO23:\n");
@@ -22,14 +22,14 @@ int main ()
     {
         printf("\nNome do aluno (%d) de info 23: ", i + 1);
         gets(alunos23[i]);
-        __fpurge(stdin);
+        fflush(stdin);
     }
     printf("DIGITE O NOME DOS ALUNOS DE INFO24:\n");
     for (i = 0; i < A; i++)//nomear alunos 24
     {
         printf("\nNome do aluno (%d) de info 24: ", i + 1);
         gets(alunos24[i]);
-        __fpurge(stdin);
+        fflush(stdin);
     }
     
     printf("\nDIGITE CONCEITOS PARA OS ALUNOS DE INFO 23 (A, B, C, D.)\n\n");

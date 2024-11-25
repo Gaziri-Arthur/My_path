@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <Windows.h>
 
 typedef struct{
     
@@ -11,6 +12,14 @@ typedef struct{
 
 Jogador *Lista = NULL;
 int numjogador;
+
+bool verifica(char op);
+void menu();
+bool validasimnao(char op);
+void cadastro();
+void limpamemoria();
+void printer();
+void saudacao();
 
 bool verifica(char op)
 {
@@ -35,6 +44,7 @@ void cadastro()
     bool ver = false;
     char op = 'a';
 
+    system("cls");
     printf("***Jogador numero %d***\n\n", numjogador + 1);
     if(numjogador < 1)
     {
@@ -52,7 +62,9 @@ void cadastro()
         printf("Jogo %d: ", i + 1);
         while(!ver)
         {
-            scanf("%c", &op);
+            fflush(stdin);
+            scanf(" %c", &op);
+            fflush(stdin);
             ver = verifica(op);
             if(!ver)
             {
@@ -83,7 +95,7 @@ void cadastro()
     
     numjogador++;
     system("cls");
-    printf("Deseja casdastrar outro jogador? (s/n)");
+    printf("Deseja casdastrar outro jogador? (s/n): ");
     while(!ver)
     {
         scanf("%c", &op);
@@ -139,8 +151,10 @@ void menu()
     printf("Digite 2 para mostrar os resultados de grupo\n");
     printf("Digite 3 para sair\n: ");
     while(op != '1' && op != '2' && op != '3')
-    {
-        scanf("%c", &op);
+    {   
+        fflush(stdin);
+        scanf(" %c", &op);
+        fflush(stdin);
         if(op != '1' && op != '2' && op != '3')
         {
             printf("Operador invalido! Digite novamente: ");
@@ -153,7 +167,16 @@ void menu()
             cadastro();
             break;
         case '2':
-            printer();
+            if(numjogador < 1)
+            {
+                printf("Nao ha jogadores para serem exibidos!");
+                Sleep(1000);
+                menu();
+            }
+            else {
+                printer();
+            }
+            
         case '3':
             limpamemoria();
     }

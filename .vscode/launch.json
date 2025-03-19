@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/arthu/OneDrive/Documents/GitHub/My_path/SRCs",
+      "program": "c:/Users/arthu/OneDrive/Documents/GitHub/My_path/SRCs/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Executar Programa Java",
+      "mainClass": "Main",
+      "console": "integratedTerminal"
+    }
+  ]
+}

@@ -35,11 +35,11 @@ void printer(bool drink, bool vote, bool work, bool sexwadult, bool drive, int l
     }
     if(sexwadult)
     {
-        printf("Voce pode legalmente transar com adultos!\n");
+        printf("Voce pode legalmente ter transar com adultos!\n");
     }
     else
     {
-        printf("Voce nao pode legalmente transar com adultos!\n");
+        printf("Voce nao pode legalmente ter transar com adultos!\n");
     }
     if(drive)
     {

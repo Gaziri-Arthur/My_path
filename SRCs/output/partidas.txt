@@ -1,0 +1,26 @@
+#Resultados:
+TrovõesFC 2 x 1 EstrelasFC
+LobosFC 1 x 1 FênixFC
+PiratasFC 3 x 0 GladiadoresFC
+MarujosFC 2 x 2 TigresFC
+CometasFC 0 x 1 ÁguiasFC
+TrovõesFC 1 x 0 LobosFC
+EstrelasFC 0 x 2 PiratasFC
+FênixFC 3 x 1 MarujosFC
+GladiadoresFC 1 x 1 CometasFC
+TigresFC 2 x 2 ÁguiasFC
+TrovõesFC 3 x 3 PiratasFC
+EstrelasFC 1 x 2 FênixFC
+LobosFC 0 x 0 MarujosFC
+GladiadoresFC 2 x 1 TigresFC
+CometasFC 1 x 0 ÁguiasFC
+TrovõesFC 2 x 1 FênixFC
+EstrelasFC 1 x 3 LobosFC
+PiratasFC 2 x 2 MarujosFC
+GladiadoresFC 1 x 1 ÁguiasFC
+TigresFC 0 x 1 CometasFC
+TrovõesFC 0 x 1 MarujosFC
+EstrelasFC 2 x 2 GladiadoresFC
+LobosFC 1 x 0 TigresFC
+FênixFC 3 x 2 CometasFC
+PiratasFC 1 x 0 ÁguiasFC

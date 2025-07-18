@@ -1,6 +1,6 @@
 package GuardaRoupa.gavetas.bermudas;
 
-public class BermudaSurfirsta 
+public class BermudaSurfista 
 {
     private String marca;
 
